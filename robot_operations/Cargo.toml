@@ -1,5 +1,5 @@
 [package]
-name = "processed_data"
+name = "robot_operations"
 version = "0.1.0"
 edition = "2021"
 

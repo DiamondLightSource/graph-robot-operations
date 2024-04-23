@@ -1,6 +1,6 @@
 [workspace]
-default-members = ["robot-operations"]
-members = ["models", "robot-operations"]
+default-members = ["robot_operations"]
+members = ["models", "robot_operations"]
 resolver = "2"
 
 [workspace.dependencies]

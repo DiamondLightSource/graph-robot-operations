@@ -2047,34 +2047,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "processed_data"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-graphql",
- "async-graphql-axum",
- "axum 0.7.5",
- "axum-extra",
- "axum-tracing-opentelemetry",
- "built",
- "chrono",
- "clap",
- "derive_more",
- "dotenvy",
- "models",
- "opentelemetry",
- "opentelemetry-otlp",
- "opentelemetry-semantic-conventions",
- "opentelemetry_sdk",
- "sea-orm",
- "tokio",
- "tracing",
- "tracing-opentelemetry",
- "tracing-subscriber",
- "url",
-]
-
-[[package]]
 name = "prost"
 version = "0.12.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2251,6 +2223,34 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.109",
+]
+
+[[package]]
+name = "robot_operations"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "async-graphql",
+ "async-graphql-axum",
+ "axum 0.7.5",
+ "axum-extra",
+ "axum-tracing-opentelemetry",
+ "built",
+ "chrono",
+ "clap",
+ "derive_more",
+ "dotenvy",
+ "models",
+ "opentelemetry",
+ "opentelemetry-otlp",
+ "opentelemetry-semantic-conventions",
+ "opentelemetry_sdk",
+ "sea-orm",
+ "tokio",
+ "tracing",
+ "tracing-opentelemetry",
+ "tracing-subscriber",
+ "url",
 ]
 
 [[package]]

@@ -6,22 +6,22 @@ WORKDIR /app
 
 COPY Cargo.toml Cargo.lock .
 COPY models/Cargo.toml models/Cargo.toml
-COPY robot-operations/Cargo.toml robot-operations/Cargo.toml
+COPY robot_operations/Cargo.toml robot_operations/Cargo.toml
 
 RUN mkdir models/src \
     && touch models/src/lib.rs \
-    && mkdir robot-operations/src \
-    && echo "fn main() {}" > robot-operations/src/main.rs \
+    && mkdir robot_operations/src \
+    && echo "fn main() {}" > robot_operations/src/main.rs \
     && cargo build --release
 
 COPY . /app
 
 RUN touch models/src/lib.rs \
-    && touch robot-operations/src/main.rs \
+    && touch robot_operations/src/main.rs \
     && cargo build --release
 
 FROM gcr.io/distroless/cc AS deploy
 
-COPY --from=build /app/target/release/robot-operations /robot-operations
+COPY --from=build /app/target/release/robot_operations /robot_operations
 
-ENTRYPOINT ["/robot-operations"]
+ENTRYPOINT ["/robot_operations"]
