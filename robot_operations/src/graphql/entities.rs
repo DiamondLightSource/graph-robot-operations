@@ -12,6 +12,7 @@ pub struct RobotAction {
     /// An opaque unique identifier for the robot actions
     pub robot_action_id: u32,
     /// An opaque unique identifier for the data collection
+    #[graphql(skip)]
     pub blsession_id: u32,
     /// An opaque unique identifier for the auto processing program
     pub blsample_id: Option<u32>,
