@@ -1,0 +1,11 @@
+apiVersion: v2
+name: robot-operations
+description: A deployment providing robot operations during beamline session as part of the graph federation
+type: application
+
+version: 0.1.0
+
+dependencies:
+  - name: robot-operations
+    version: 0.1.0
+    condition: robot-operations.enabled
